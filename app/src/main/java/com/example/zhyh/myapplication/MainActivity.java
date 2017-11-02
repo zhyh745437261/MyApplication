@@ -26,10 +26,13 @@ import java.io.IOException;
 
 public class MainActivity extends AppCompatActivity {
 
+    private static find String TAG ="zhuyahui";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Log.d(TAG,"oncreate()");
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
